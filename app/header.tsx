@@ -12,16 +12,6 @@ const navigation = [
     name: "Unseal",
     href: "/unseal",
   },
-
-  {
-    name: "Deploy",
-    href: "/deploy",
-  },
-  {
-    name: "GitHub",
-    href: "https://github.com/chronark/envshare",
-    external: true,
-  },
 ] satisfies { name: string; href: string; external?: boolean }[];
 
 export const Header: React.FC = () => {
@@ -31,7 +21,7 @@ export const Header: React.FC = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-between gap-2 pt-6 sm:h-20 sm:flex-row sm:pt-0">
           <Link href="/" className="text-2xl font-semibold duration-150 text-zinc-100 hover:text-white">
-            EnvShare
+           Send-Envs
           </Link>
           {/* Desktop navigation */}
           <nav className="flex items-center grow">
