@@ -11,6 +11,7 @@ const navigation = [
   {
     name: "Unseal",
     href: "/unseal",
+    external: true,
   },
 ] satisfies { name: string; href: string; external?: boolean }[];
 
